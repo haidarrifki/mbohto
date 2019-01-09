@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pencarian Tempat</title>
+    <link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon">
+    <link rel='stylesheet prefetch' href='assets/css/bulma.min.css'>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/cards.css">
+    <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="section">
+            <div class="box">
+                <div class="field has-addons">
+                        <div class="control is-expanded has-icons-left">
+                                <input class="input is-large" type="text" placeholder="Cari tempat terdekat" onkeydown="proses(this)" />
+                                <span class="icon is-medium is-left">
+                                    <i class="fa fa-search"></i>
+                                </span>
+                            </div>
+                </div>
+                <hr>
+                <div class="field has-addons">
+                    <button onclick="ambilLokasi()" class="button is-medium is-primary is-fullwidth">Lokasi Saya</button>
+                </div>
+            </div>
+            <div id="bagian-output" class="row columns is-multiline"></div>
+        </div>
+        <div class="content">
+            <div class="footer-down">
+                    <div class="has-text-centered columns is-mobile is-centered">
+                            <p>Made with <i class="fa fa-heart"></i> by <a href="https://haidarrifki.com">Haidar Rifki</a></p>
+                        </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-image" class="modal">
+        <div id="modal-bg" class="modal-background"></div>
+        <div class="modal-content">
+          <p id="image-venue" class="image is-4by3">
+          </p>
+        </div>
+        <button id="modal-close" class="modal-close is-large" aria-label="close"></button>
+      </div>
+
+    <script src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="assets/js/ajax.js"></script>
+</body>
+</html>

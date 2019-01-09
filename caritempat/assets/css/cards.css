@@ -1,0 +1,23 @@
+    body {
+    background: #eeeeee;
+    }
+    .footer-down{
+    padding: 50px 50px;
+    /* background-color: #222831;
+    color: lemonchiffon; */
+    }
+    .fa-heart
+    {color: crimson;}
+    .is-shady {
+        animation: flyintoright .4s backwards;
+        background: #fff;
+        box-shadow: rgba(0, 0, 0, .1) 0 1px 0;
+        border-radius: 4px;
+        display: inline-block;
+        margin: 10px;
+        position: relative;
+        transition: all .2s ease-in-out;
+    }
+    .is-shady:hover {
+    box-shadow: 0 10px 16px rgba(0, 0, 0, .13), 0 6px 6px rgba(0, 0, 0, .19);
+    }
